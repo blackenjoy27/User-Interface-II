@@ -1,0 +1,195 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    
+}
+
+/* General CSS */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #eff8ff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Noto+Sans+JP&display=swap');
+
+/* =================== Top Part ==================== */
+header{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+header h1{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 7rem;
+    font-family: 'Akaya Telivigala', cursive;
+}
+header hr{
+    border-style: none none dotted;
+    border-width: 0.5rem;
+    border-color: #bedcfa;
+    width: 10rem;
+    
+}
+
+header nav{
+    display: flex;
+    width: 30%;
+    margin: 2rem auto;
+    justify-content: space-evenly;
+}
+
+header nav a{
+    text-decoration: none;
+    padding:1rem;
+    background-color: #999b84;
+    color: #f4f9f9;
+    border-radius: 10px;
+}
+
+
+header h2{
+    text-align:center;
+    font-size: 3rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header p{
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+
+/* =================== Top Part ==================== */
+
+.bg-img{
+    height:45vh;
+    background-image: url("images/simonCat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    background-position: bottom;
+    margin: 4rem auto 0rem;
+    
+    
+}
+
+
+/* =================== Top Part ==================== */
+
+.projects{
+    
+    display:flex;
+    height: 55vh;
+}
+.projects-container{
+    display:flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+.projects-container div{
+    width: 20%;
+    height: 55vh;
+    text-align: center;
+}
+
+.projects-container div i{
+    margin: 10rem auto 6rem;
+    font-size: 10rem;
+}
+
+.projects-container div a{
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: #c5d7bd;
+    border-radius: 10px;
+
+}
+.projects p{
+
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    width: 30rem;
+}
+
+
+
+
+
+
+/* =================== Top Part ==================== */
+footer{
+    display:flex;
+    height: 15vh;
+    justify-content: center;
+    align-content: center;
+    background-color:#999b84;
+    
+}
+footer a{
+    margin: auto;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: #beca5c;
+    border-radius: 10px;
+}
+
+
+
