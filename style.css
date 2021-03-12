@@ -59,10 +59,11 @@ body{
     font-size: 1.6rem;
     line-height: 1.5;
     background-color: #eff8ff;
+    
 }
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Noto+Sans+JP&display=swap');
 
-/* =================== Top Part ==================== */
+/* =========================================== */
 header{
     display:flex;
     flex-flow: column wrap;
@@ -78,7 +79,7 @@ header h1{
 header hr{
     border-style: none none dotted;
     border-width: 0.5rem;
-    border-color: #bedcfa;
+    border-color: #ebecf1;
     width: 10rem;
     
 }
@@ -88,6 +89,7 @@ header nav{
     width: 30%;
     margin: 2rem auto;
     justify-content: space-evenly;
+    
 }
 
 header nav a{
@@ -113,7 +115,7 @@ header p{
 }
 
 
-/* =================== Top Part ==================== */
+/* =========================================== */
 
 .bg-img{
     height:45vh;
@@ -128,44 +130,84 @@ header p{
 }
 
 
-/* =================== Top Part ==================== */
+/* =========================================== */
 
 .projects{
     
     display:flex;
+    flex-flow:row wrap;
     height: 55vh;
+    justify-content: space-evenly;
+    
 }
 .projects-container{
-    display:flex;
-    justify-content: space-evenly;
+    display: flex;
     width: 60%;
+    justify-content: space-evenly;
 }
-.projects-container div{
+.box{
+    display:flex;
     width: 20%;
-    height: 55vh;
+    flex-flow:column wrap;
+    
+    justify-content: space-evenly;
+    
+}
+.box i{
+    font-size: 500%;
     text-align: center;
+    
 }
+.box h3{
 
-.projects-container div i{
-    margin: 10rem auto 6rem;
-    font-size: 10rem;
-}
-
-.projects-container div a{
-    display: block;
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
     padding: 1rem;
-    font-size: 2rem;
-    background-color: #c5d7bd;
+    width: 15rem;
     border-radius: 10px;
-
+    padding: 1rem;
+    font-size: 100%;
+    color:#393e46;
+    background-color: #d9ecf2;
 }
+@media(max-width:800px){
+    .box i{
+        font-size: 300%;
+        text-align: center;
+        
+    }
+    .box h3{
+    
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+        width: 15rem;
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: 1.25rem;
+        color:#393e46;
+        background-color: #d9ecf2;
+    }
+}
+@media(max-width:600px){
+    .box h3{
+        font-size: 1rem;
+    }
+}
+
+
+
+
 .projects p{
 
     font-size: 2rem;
     text-align: center;
     margin: auto;
     width: 30rem;
+    border-radius: 10px;
+    border: #d6e0f0 solid 2px;
+    padding:1rem;
 }
 
 
@@ -173,8 +215,10 @@ header p{
 
 
 
-/* =================== Top Part ==================== */
+
+/* =========================================== */
 footer{
+    
     display:flex;
     height: 15vh;
     justify-content: center;
