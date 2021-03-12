@@ -59,9 +59,14 @@ body{
     font-size: 1.6rem;
     line-height: 1.5;
     background-color: #eff8ff;
+
     
 }
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Noto+Sans+JP&display=swap');
+
+
+
+
 
 /* =========================================== */
 header{
@@ -98,6 +103,12 @@ header nav a{
     background-color: #999b84;
     color: #f4f9f9;
     border-radius: 10px;
+    transition-delay: 2ms;
+}
+
+header nav a:hover{
+    background-color: #96bb7c;
+    color:#eff8ff;
 }
 
 
@@ -118,6 +129,7 @@ header p{
 /* =========================================== */
 
 .bg-img{
+    
     height:45vh;
     background-image: url("images/simonCat.jpg");
     background-repeat: no-repeat;
@@ -138,20 +150,31 @@ header p{
     flex-flow:row wrap;
     height: 55vh;
     justify-content: space-evenly;
+    margin-bottom: 0.5rem;
     
 }
 .projects-container{
     display: flex;
     width: 60%;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
 }
 .box{
     display:flex;
     width: 20%;
-    flex-flow:column wrap;
+    height: 80%;
+    flex-direction: column;
     
+    
+    padding:1rem;
     justify-content: space-evenly;
+    border-radius: 10px;
     
+}
+.box:hover{
+    border:#d6e0f0 2px solid;
+
 }
 .box i{
     font-size: 500%;
@@ -218,16 +241,17 @@ header p{
 
 /* =========================================== */
 footer{
-    
+    margin-top: 0.5rem;
     display:flex;
     height: 15vh;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     background-color:#999b84;
     
 }
 footer a{
-    margin: auto;
+    
     text-decoration: none;
     padding: 1rem;
     font-size: 2rem;
